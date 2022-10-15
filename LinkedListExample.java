@@ -31,7 +31,7 @@ class LinkedList {
             this.root = new Node(value, null);
             return;
         }
-        // If it's just one element, add if after that one
+        // If it's just one element, add it after that one
         Node n = this.root;
         if(n.next == null) {
             n.next = new Node(value, null);
@@ -40,6 +40,7 @@ class LinkedList {
         // Otherwise, loop until the end and add at the end with a null
         while(n.next != null) {
             n = n.next;
+            // was originally here
         }
         n.next = new Node(value, null);
         // moved this line out of the loop
