@@ -40,7 +40,7 @@ public class FileExample {
 
 	static List<File> getFiles(File start) throws IOException {
 	  File f = start;
-	  List<File> result = new ArrayList<>();
+	  List<File> result = new ArrayList<File>();
 	  result.add(start);
 	  if(f.isDirectory()) {
       File[] paths = f.listFiles();
